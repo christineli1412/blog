@@ -6,17 +6,37 @@
   overflow: scroll;
 }
 
-header {
+header,
+.userButton {
   display: flex;
+  align-items: center;
+}
+
+header {
   justify-content: space-between;
   background-color: black;
   color: white;
   grid-column: 1 / span 2;
-  padding: 10px 5px;
+  padding: 20px;
+  font-size: larger;
+}
+
+.userButton img {
+  border-radius: 50%;
+  height: 20px;
+}
+
+#signInButton,
+#signOutButton,
+#newArticle {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: medium;
 }
 
 form {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -24,21 +44,28 @@ form {
 
 form input,
 form textarea {
-  margin-bottom: 10px;
-  width: 300px;
+  margin-bottom: 20px;
+  width: calc(100% / 1.1);
+}
+
+form textarea {
+  height: 600px;
 }
 
 nav,
 article {
   height: 100%;
-  padding: 10px;
+  padding: 0px 0px 0px 20px;
 }
 
 nav {
   background-color: #dee9ff;
 }
 
-nav p:hover {
+nav p:hover,
+#signInButton:hover,
+#signOutButton:hover,
+#newArticle:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -55,4 +82,45 @@ article .body {
   background-color: red;
   color: gold;
   padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    grid-template-columns: 150px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    grid-template-columns: 100px auto;
+  }
+  header {
+    padding: 7px;
+    font-size: medium;
+  }
+  nav,
+  article {
+    padding: 0px 0px 0px 7px;
+    font-size: small;
+  }
+
+  form {
+    padding: 7px;
+    font-size: small;
+  }
+
+  #signInButton,
+  #signOutButton,
+  #newArticle {
+    font-size: small;
+  }
+
+  .userButton img {
+    height: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  form textarea {
+    height: 500px;
+  }
 }

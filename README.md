@@ -1,9 +1,9 @@
 # A Blog App
 
-This is a trivial blog app, started with create-react-app.
+By Christine Li
 
-It works entirely within memory, so reloads blow everything away except for the first two mock articles.
+This blog app was created using React and is hosted on firebase. In order to view articles, users must first sign in through Google. Certain users are allowed to create articles. Changes to the blog will be saved when a user signs out or exits the tab.
 
-This repo is designed for you to fork and extend with (1) better CSS and (2) a real back end, with authentication and a database.
+Currently, there is no delete article functionality, and once users click the create article button, they must create an article in order to read other articles.
 
 link: https://blog-7d0ba.web.app
