@@ -14,7 +14,7 @@ header,
 
 header {
   justify-content: space-between;
-  background-color: rgb(15, 33, 42);
+  background-color: black;
   color: white;
   grid-column: 1 / span 2;
   padding: 20px;
@@ -65,8 +65,8 @@ nav {
 article,
 #formPage {
   background-image: linear-gradient(
-    rgba(233, 234, 240, 0.945),
-    rgba(214, 224, 240, 0.574)
+    rgba(214, 232, 240, 0.945),
+    rgba(116, 111, 190, 0.678)
   );
 }
 
