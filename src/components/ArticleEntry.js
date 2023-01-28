@@ -16,7 +16,7 @@ export default function ArticleEntry({ addArticle }) {
   }
 
   return (
-    <div>
+    <div id="formPage">
       <form onSubmit={submit}>
         {error && <p className="error">{error}</p>}
         Title
